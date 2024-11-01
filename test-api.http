@@ -5,7 +5,7 @@ Accept: application/json
 ###
 
 # GET a specific student by ID
-GET https://jolly-bay-06814d410.5.azurestaticapps.net:5000/students/1
+GET http://localhost:5000/students/1
 Accept: application/json
 
 ###
