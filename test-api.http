@@ -1,0 +1,39 @@
+# GET all students
+GET http://localhost:5000/students
+Accept: application/json
+
+###
+
+# GET a specific student by ID
+GET https://jolly-bay-06814d410.5.azurestaticapps.net:5000/students/1
+Accept: application/json
+
+###
+
+# POST create a new student
+POST http://localhost:5000/students
+Content-Type: application/json
+
+{
+  "Name": "Charlie",
+  "Grade": "4",
+  "Email": "charlie@example.com"
+}
+
+###
+
+# PUT update an existing student by ID
+PUT http://localhost:5000/students/1
+Content-Type: application/json
+
+{
+  "Name": "Alice Updated",
+  "Grade": "5",
+  "Email": "alice_updated@example.com"
+}
+
+###
+
+# DELETE a student by ID
+DELETE http://localhost:5000/students/1
+Accept: application/json
